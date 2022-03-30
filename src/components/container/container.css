@@ -22,7 +22,6 @@
   padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 p {
   font-size: 20px;
@@ -36,12 +35,14 @@ h3 {
   font-size: 18px;
   margin: -10px 0 -10px 30px;
 }
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
 
 .result {
   width: 200px;
-  height: 40px;
-
-  background-color: rgba(0, 128, 0, 0.562);
+  height: 50px;
 
   border-radius: 10px;
 
@@ -54,6 +55,7 @@ h3 {
   align-items: center;
   margin: -10px auto;
 }
+
 h4 {
   font-size: 40px;
   text-align: center;
@@ -67,17 +69,21 @@ h4 {
 
 .logo {
   width: 250px;
-  margin-top: -60%;
+  margin-top: 0%;
+  margin-bottom: 50px;
   margin-left: -200px;
 }
 .left-container {
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
+.left-container h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
 h1 {
   font-size: 35px;
-  margin: 70px 0;
+  margin: 0;
   text-transform: uppercase;
 }
 input {
@@ -85,22 +91,57 @@ input {
   height: 50px;
   border-radius: 5px;
   border: none;
-  background-color: #c4c4c4;
+  background-color: #c4c4c462;
   margin: 2px 0;
   padding: 10px;
 }
 ::placeholder {
   font-size: 15px;
 }
-button {
-  width: 200px;
-  height: 40px;
-  margin-top: 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #e80000bb;
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
+
+@media (min-width: 500px) and (max-width: 1023px) {
+  .container-primary {
+    width: 500px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+  .line {
+    width: 80%;
+    height: 0px;
+    border: dashed 2px #c4c4c4;
+  }
+  .left-container,
+  .right-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .left-container {
+    height: 70%;
+  }
+  .right-container {
+    height: 30%;
+  }
+  h1 {
+    font-size: 25px;
+    margin: 0px 0;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  p,
+  h3 {
+    font-size: 14px;
+  }
+  .right-container h2 {
+    margin: 0;
+  }
+  .container-row {
+    width: 100%;
+    display: flex;
+  }
+  .container-row div {
+    width: 50%;
+    padding: 10px;
+  }
 }
